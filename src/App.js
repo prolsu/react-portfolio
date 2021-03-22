@@ -16,11 +16,10 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
-          </ Route>
+          </Route>
           <Route exact path="/portfolio">
             <Portfolio />
           </Route>
-          {/* <Route exact path="/resume" component={Resume} /> */}
         </Switch>
       </div>
     </Router>

@@ -2,7 +2,6 @@ import React from "react";
 
 import linkedinLogo from "./logos/linkedin.png";
 import gitHubLogo from "./logos/github.png";
-// import profile1 from "./pictures/IMG_7937.jpg";
 import profile2 from "./pictures/IMG_7937-2.jpg";
 
 import { Link } from "react-router-dom";
