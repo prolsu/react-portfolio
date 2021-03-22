@@ -1,0 +1,132 @@
+html,
+body {
+    background-color: rgb(0, 0, 0);
+    opacity: .90;
+    display: block;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    color: rgb(67, 67, 230);
+}
+
+.myLinks a {
+    margin: 20px 25px 25px 0;
+    font-size: 135%;
+}
+
+.intLink {
+    color: whitesmoke;
+}
+.intLink:hover{
+    color: tomato;
+}
+
+.active {
+    color: tomato;
+}
+
+.icons img{
+    max-width: 32px;
+    max-height: 32px;
+    padding-left: 5px;;
+}
+
+.myself {
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,.98) 90%);
+}
+
+.myself img {
+    position: relative;
+    z-index: -1;
+}
+
+.leftHeading {
+    font-size: 300%;
+}
+
+.aboutMe{
+    color: whitesmoke;
+}
+
+#desktopHeader {
+    top: 0;
+    transition: top 2.5s ease-out;
+}
+
+#desktopHeader.move {
+    top: -100px;
+}
+
+#brief {
+    line-height: 30px;
+    position: absolute;
+    top: 75%;
+    left: 115px;
+    opacity: 0.0;
+    font-size: 25px;
+    transition-property: opacity;
+    transition-duration:  2.5s;
+}
+
+#brief.showMe {
+    opacity: 0.9;
+}
+
+.repoIcon {
+    position: absolute;
+    max-width: 45px;
+    max-height: 45px;
+    right: 25px;
+    bottom: 25px;
+}
+
+.desktop .myself #linkHolder #desktopHeader .myLinks{
+    position: absolute;
+    left: 10%;
+}
+
+#hwHolder1,
+#hwHolder2,
+#hwHolder3 {
+    opacity: 0.90;
+    transition: opacity 1.5s ease-in-out;
+    position: relative;
+}
+
+#hwHolder1.after,
+#hwHolder2.after,
+#hwHolder3.after {
+    opacity: 0.33;
+}
+
+@media only screen and (min-width: 1450px){
+
+    header {
+        position: relative;
+        font-size: 150%;
+        margin-left: 15%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .myImage img {
+        max-width: 50%;
+        height: auto;
+        float: right;
+    }
+    .mobile{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1449px){
+    .desktop{
+        display: none;
+    }
+    header {
+        margin-top: 35px;
+        margin-left:35px;
+    }
+}
