@@ -1,6 +1,12 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import betsyshop from "./pictures/betsyshop.PNG";
+import weather from "./pictures/weatherApp.PNG";
+import burgers from "./pictures/website-desktop.PNG";
+import linkedinLogo from "./logos/linkedin.png";
+import gitHubLogo from "./logos/github.png";
+import repo from "./logos/repo.png";
 
 function PortfolioC(props) {
     return (
@@ -27,7 +33,7 @@ function PortfolioC(props) {
                             </h1>
                             <hr />
                             <a rel="noreferrer" href="https://betsyshop.herokuapp.com/" target="_blank">
-                                <img src="./pictures/betsyshop.PNG" alt="betsyshop, collaborated project with two classNamemates" />
+                                <img src={betsyshop} alt="betsyshop, collaborated project with two classNamemates" />
                                 <hr />
                             </a>
                             <h1 className="subtitle">
@@ -36,7 +42,7 @@ function PortfolioC(props) {
                             </h1>
                             <a rel="noreferrer" href="https://github.com/prolsu/betsyshop" target="_blank">
                                 <abbr title="Repository">
-                                    <img className="repoIcon" src="./pictures/repo.png" alt="GitHub Repository" />
+                                    <img className="repoIcon" src={repo} alt="GitHub Repository" />
                                 </abbr>
                             </a>
                         </article>
@@ -48,7 +54,7 @@ function PortfolioC(props) {
                             </h1>
                             <hr />
                             <a rel="noreferrer" href="https://iseeburgers.herokuapp.com/" target="_blank">
-                                <img src="./pictures/website-desktop.PNG" alt="MySQL burger app, uses node.js, mysql, and handlebars" />
+                                <img src={burgers} alt="MySQL burger app, uses node.js, mysql, and handlebars" />
                                 <hr />
                             </a>
                             <h1 className="subtitle">
@@ -58,7 +64,7 @@ function PortfolioC(props) {
                             </h1>
                             <a rel="noreferrer" href="https://github.com/prolsu/burger" target="_blank">
                                 <abbr title="Repository">
-                                    <img className="repoIcon" src="./pictures/repo.png" alt="GitHub Repository" />
+                                    <img className="repoIcon" src={repo} alt="GitHub Repository" />
                                 </abbr>
                             </a>
                         </article>
@@ -70,7 +76,7 @@ function PortfolioC(props) {
                             </h1>
                             <hr />
                             <a rel="noreferrer" href="https://prolsu.github.io/weather_dashboard/" target="_blank">
-                                <img src="./pictures/weatherApp.PNG" alt="weather app, applied the use of weather API" />
+                                <img src={weather} alt="weather app, applied the use of weather API" />
                                 <hr />
                             </a>
                             <h1 className="subtitle">
@@ -79,7 +85,7 @@ function PortfolioC(props) {
                             </h1>
                             <a rel="noreferrer" href="https://github.com/prolsu/weather_dashboard" target="_blank">
                                 <abbr title="Repository">
-                                    <img className="repoIcon" src="./pictures/repo.png" alt="GitHub Repository" />
+                                    <img className="repoIcon" src={repo} alt="GitHub Repository" />
                                 </abbr>
                             </a>
                         </article>
@@ -89,10 +95,10 @@ function PortfolioC(props) {
 
             <div className="container">
                 <div className="column" style={{ textAlign: "center" }}>
-                    <a className="icons" rel="noreferrer" href="https://www.linkedin.com/in/pralburco/" target="_blank"><img src="./pictures/LI-In-Bug.png"
+                    <a className="icons" rel="noreferrer" href="https://www.linkedin.com/in/pralburco/" target="_blank"><img src={linkedinLogo}
                         alt="linkedin" /></a>
                     <a className="icons" rel="noreferrer" href="https://github.com/prolsu" target="_blank"><img
-                        src="./pictures/iconfinder_Github_1298743.png" alt="github" /></a>
+                        src={gitHubLogo} alt="github" /></a>
                 </div>
             </div>
         </React.Fragment>
